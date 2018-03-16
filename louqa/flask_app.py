@@ -6,4 +6,3 @@ from .config import FlaskConfig
 
 app = Flask(__name__)
 app.config.from_object(FlaskConfig)
-app.config['SQALCHEMY_TRACK_MODIFICATIONS'] = True

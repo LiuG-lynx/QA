@@ -11,4 +11,4 @@ qa = Blueprint('qa', __name__, url_prefix='')
 @qa.route('/', defaults={'title': None})
 def index(title):
     user = User.query.filter().first()
-    return render_template("qa/index.html")
+    return render_template("qa/index.html", title=title, tem_str=user.name)
