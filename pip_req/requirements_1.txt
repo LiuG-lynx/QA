@@ -1,6 +1,7 @@
-Flask
-flask-migrate
-flask-SQLAlchemy
+flask
+flask-login
+Flask-migrate
+Flask-SQLAlchemy
 Flask-Script
 Jinja2
 Mako
