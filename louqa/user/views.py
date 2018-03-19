@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+﻿#!/usr/bin/env python
 # encoding: utf-8
 
 from flask import (Blueprint, request, current_app, redirect, url_for,
@@ -6,7 +6,7 @@ from flask import (Blueprint, request, current_app, redirect, url_for,
 from .models import User
 from sqlalchemy import or_
 from ..dbs import db
-from flask.ext.login import login_user
+from flask_login import login_user
 
 
 user = Blueprint('user', __name__, url_prefix='/user')
