@@ -14,7 +14,7 @@ def configure_login(app):
     login_manager.refresh_view = 'qa.index'
     login_manager.login_message = None
     login_manager.session_protection = "basic"
-
+    login_manager.init_app(app)
     @login_manager.user_loader
     def load_user(id):
         return User.query.get(id)

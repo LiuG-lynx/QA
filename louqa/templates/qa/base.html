@@ -2,7 +2,7 @@
 <html lang="zh-Hans">
 <head>
     <meta charset="UTF-8">
-    <title>LuoQA</title>
+    <title>LouQA</title>
     <meta name="author" content="liusong">
 
     <!-- 移动 -->
@@ -22,7 +22,7 @@
 
 <div id="wrap" class="grid_1200">
 
-    {% if not current_user.is_authenticated() %}
+    {% if not current_user.is_authenticated %}
     <div class="login-panel">
         <section class="container">
             <div class="row">
@@ -69,7 +69,7 @@
     <div id="header-top">
         <section class="container clearfix">
             <nav class="header-top-nav">
-                {% if current_user.is_authenticated() %}
+                {% if current_user.is_authenticated %}
                 <ul>
                     <li><a><i class="icon-user"></i>{{ current_user.name }}</a></li>
                 </ul>
@@ -104,7 +104,7 @@
     {% block content %} {% endblock %}
 
 
-{% if not current_user.is_authenticated() %}
+{% if not current_user.is_authenticated %}
 <div class="panel-pop" id="signup">
     <h2>注册<i class="icon-remove"></i></h2>
     <div class="form-style form-style-3">
